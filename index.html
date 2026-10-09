@@ -3,52 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fbfdfc">
   <title>Z Sözlük | Z Kuşağı Sözlüğü</title>
   <link rel="icon" type="image/png" href="logo-z-sozluk.png">
   <link rel="stylesheet" href="style.css">
+  <script src="kelimeler.js" defer></script>
   <script src="script.js" defer></script>
 </head>
 <body>
-  <header class="ust-alan">
-    <a class="logo" href="#" aria-label="Z Sözlük ana sayfa">Z<span>.</span></a>
-    <span class="ust-yazi">DİJİTAL KÜLTÜR SÖZLÜĞÜ</span>
+  <header class="topbar">
+    <a class="brand" href="index.html" aria-label="Z Sözlük ana sayfa">
+      <img src="logo-z-sozluk.png" alt="Z Sözlük logosu">
+    </a>
+    <span class="top-note">DİJİTAL KÜLTÜR SÖZLÜĞÜ</span>
   </header>
 
-  <main class="sayfa">
-    <section class="tanitim">
-      <p class="etiket">KELİMELERİN YENİ NESİL HALİ</p>
-      <h1>Z <span>Sözlük</span></h1>
-      <p class="aciklama">
-        Z kuşağının kullandığı kelimeleri keşfet, Türkçe karşılıklarını öğren.
-      </p>
-
-      <label class="arama-kutusu" for="arama">
-        <span aria-hidden="true">⌕</span>
-        <input
-          id="arama"
-          type="search"
-          placeholder="Bir kelime ara… Örn: cringe"
-          autocomplete="off"
-        >
-        <kbd>/</kbd>
-      </label>
-
-      <p id="sonuc-bilgisi" class="sonuc-bilgisi" aria-live="polite"></p>
-    </section>
-
-    <section class="sozluk-bolumu" aria-label="Sözlük kelimeleri">
-      <div class="bolum-basligi">
-        <h2>Sözlük</h2>
-        <span>Alfabetik keşfet</span>
+  <main>
+    <section class="hero home-hero">
+      <div class="hero-decoration" aria-hidden="true">
+        <span class="bubble bubble-one">Z</span>
+        <span class="bubble bubble-two">Aa</span>
+        <span class="bubble bubble-three">#</span>
       </div>
+      <div class="eyebrow"><span class="dot"></span> GENÇLERİN DİLİ, TÜRKÇENİN KARŞILIĞI</div>
+      <h1>Kelimelerin yeni<br><span>nesil anlamı.</span></h1>
+      <p class="intro">Z kuşağının günlük hayatta, sosyal medyada ve oyunlarda kullandığı ifadelerin Türkçe karşılıklarını keşfet.</p>
 
-      <nav id="harfler" class="harfler" aria-label="Alfabetik harfler"></nav>
-      <div id="kelime-listesi" class="kelime-listesi"></div>
+      <form class="search-form" id="arama-formu" role="search">
+        <span class="search-icon" aria-hidden="true">⌕</span>
+        <input id="arama" name="q" type="search" placeholder="Bir kelime yaz ve Enter’a bas..." autocomplete="off" aria-label="Sözlükte kelime ara">
+        <button type="submit">Ara <span aria-hidden="true">↗</span></button>
+      </form>
+      <p class="search-hint">Arama sonuçları ayrı bir sayfada açılır. Bir kelime seçerek açıklamasına ulaşabilirsin.</p>
     </section>
 
-    <footer>
-      <p>Z Sözlük — Gençlerin dili, Türkçenin karşılığı.</p>
-    </footer>
+    <section class="bottom-note" aria-label="Sözlük hakkında">
+      <div class="note-icon" aria-hidden="true">Z.</div>
+      <div>
+        <h2>Her kelimenin bir hikâyesi var</h2>
+        <p>Gençlerin kullandığı ifadeleri keşfet, anlamlarını öğren ve Türkçedeki karşılıklarıyla tanış.</p>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <span>Z SÖZLÜK</span>
+    <span>Z Sözlük — Gençlerin dili, Türkçenin karşılığı.</span>
+  </footer>
 </body>
 </html>
